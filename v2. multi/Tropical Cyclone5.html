@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Accessible Map</title>
+    <link
+      rel="stylesheet"
+      href="https://openlayers.org/en/v3.20.1/css/ol.css"
+      type="text/css" />
+    <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
+    <script src="https://openlayers.org/en/v3.20.1/build/ol.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.15/proj4.js"></script> -->
+    <style>
+      @font-face {
+        font-family: "S-CoreDream-3Light";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      html {
+        font-family: "S-CoreDream-3Light";
+      }
+
+      #popUp {
+        background-color: #7aa874;
+        display: none;
+        border-radius: 5px;
+      }
+
+      #dateBox {
+        padding: 10px;
+        background-color: white;
+        border-radius: 5px 5px 0 0;
+      }
+
+      #infoBox {
+        padding: 10px;
+      }
+
+      #selectBox {
+        font-family: "S-CoreDream-3Light";
+        padding: 5px;
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="map"
+      class="map"></div>
+    <div id="popUp">
+      <div id="dateBox">
+        <div id="date"></div>
+      </div>
+      <div id="infoBox">
+        <div id="coor"></div>
+        <div id="cp"></div>
+        <div id="mws"></div>
+        <div id="sr"></div>
+        <div id="lr"></div>
+      </div>
+    </div>
+    <select id="selectBox">
+      <option value="all">All</option>
+    </select>
+
+    <script src="Tropical Cyclone5.js"></script>
+  </body>
+</html>
