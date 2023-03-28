@@ -1,14 +1,7 @@
 ## Openlayers3 기반 태풍 데이터 처리
-
----
-
-<br>
 - 사용기술: Vanilla JS(with openlayers), HTML, CSS
-<br>
 - 원데이터: TY2009_MAYSAK.txt / typhoon.txt
-<br>
-- v2의 경우 txt 파일에 데이터를 추가하면 자동으로 화면에 그려질 수 있도록 구성함.
-<br>
+- v2의 경우 txt 파일에 데이터를 추가하면 자동으로 화면에 그려질 수 있도록 구성함. (때문에 새로고침 시 태풍의 컬러가 변동됨) 
 - 데이터 형태: <br>1열&nbsp;&nbsp;> 태풍 '태풍명' <br>2열 이후 > 관측일시,위도,경도,중심기압,최대풍속,강풍반경,폭풍반경 순으로 띄어쓰기 없이 작성.<br>태풍별로 한 줄씩 띄어쓰기.
 
 ```
@@ -51,10 +44,9 @@
 ```
 
 <br>
+
 ### V.1
-
----
-
 ![single_cyclone](https://user-images.githubusercontent.com/113993379/228096625-5650315c-8f1b-4887-a2d5-49057813e0fd.gif)
 
 ### V.2
+![multi_cyclone](https://user-images.githubusercontent.com/113993379/228174421-7120314e-d2c4-4b3b-88e9-fc8274936b76.gif)
